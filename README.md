@@ -1,6 +1,8 @@
 Sinon-jQuery
 ============
 
+[![Build Status](https://secure.travis-ci.org/jadu/sinon-jquery.png?branch=master)](http://travis-ci.org/jadu/sinon-jquery)
+
 Sinon matcher for matching jQuery collections.
 
 ```javascript
