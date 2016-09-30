@@ -1,6 +1,6 @@
 {
   "name": "sinon-jquery",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sinon matcher for matching jQuery collections",
   "main": "index.js",
   "scripts": {
