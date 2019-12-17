@@ -11,10 +11,10 @@
 
 'use strict';
 
-import _ from 'lodash';
-import chai from 'chai';
-import sinon from 'sinon';
-import sinonChai from 'sinon-chai';
+const _ = require('lodash');
+const chai = require('chai');
+const sinon = require('sinon');
+const sinonChai = require('sinon-chai');
 
 chai.use(sinonChai);
 
