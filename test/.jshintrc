@@ -10,9 +10,9 @@
         "afterEach": false,
         "beforeEach": false,
         "describe": false,
-        "expect": false,
+        "expect": true,
         "it": false,
-        "sinon": false
+        "sinon": true
     },
     "immed": true,
     "indent": 4,

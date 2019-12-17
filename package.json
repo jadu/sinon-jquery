@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "jshint .",
-    "mocha": "mochify --phantomjs ./node_modules/.bin/phantomjs -r ./test/harness ./test/*.test.js --reporter spec",
+    "mocha": "mochify ./test/*.test.js --reporter spec",
     "test": "npm run lint && npm run mocha"
   },
   "keywords": [
@@ -15,24 +15,35 @@
     "chai"
   ],
   "author": "Dan Phillimore <daniel.phillimore@jadu.co.uk>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jadu/sinon-jquery"
+  },
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.0.0",
-    "jquery": "^2.1.4",
-    "jshint": "^2.8.0",
-    "mochify": "^2.9.0",
-    "phantomjs": "^1.9.17",
-    "sinon": "^1.15.3",
-    "sinon-chai": "^2.8.0"
+    "jquery": "^3.4.1",
+    "jshint": "^2.10.3",
+    "mochify": "^6.6.0",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.14.0"
   },
   "browserify": {
     "transform": [
-      ["babelify", {"presets": ["es2015"]}]
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
     ]
   },
   "dependencies": {
-    "babel-preset-es2015": "^6.16.0",
-    "babelify": "^7.0.0",
-    "lodash": "^3.10.1"
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.7.6",
+    "babelify": "^10.0.0",
+    "lodash": "^4.17.15"
   }
 }

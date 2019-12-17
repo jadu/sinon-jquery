@@ -13,9 +13,10 @@
 
 import _ from 'lodash';
 import $ from 'jquery';
-import {expect} from 'chai';
-import sinon from 'sinon';
 import Matcher from '../src/Matcher';
+const expect = require('chai').expect;
+const sinon = require('sinon');
+require('./harness');
 
 describe('Matcher', function () {
     beforeEach(function () {
